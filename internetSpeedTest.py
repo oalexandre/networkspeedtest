@@ -15,6 +15,6 @@ ping = st.results.ping
 
 #Data hora #hora #download #upload #ping
 novaLinha = [data, hora, download, uplooad, ping]
-with open('internetSpeedTest.csv', 'w') as arquivo_csv:
+with open('internetSpeedTest.csv', 'a') as arquivo_csv:
     escrever = csv.writer(arquivo_csv, delimiter=';', lineterminator='\n')
     escrever.writerow(novaLinha)
