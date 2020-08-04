@@ -27,9 +27,12 @@ siteG1 = response_list.rtt_avg_ms
 esponse_list = ping('lohasstore.com.br')
 siteLohas = response_list.rtt_avg_ms
 
+esponse_list = ping('www.lohasstore.com.br')
+siteLohasWWW = response_list.rtt_avg_ms
+
 
 #Data hora #hora #download #upload #ping
-novaLinha = [data, hora, roteadorWifi, modemUnifique, dnsGoogle, siteGoogle, siteG1, siteLohas]
+novaLinha = [data, hora, roteadorWifi, modemUnifique, dnsGoogle, siteGoogle, siteG1, siteLohas, siteLohasWWW]
 print (novaLinha)
 with open('pingInterno.csv', 'w') as arquivo_csv:
     escrever = csv.writer(arquivo_csv, delimiter=';', lineterminator='\n')
