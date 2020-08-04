@@ -4,9 +4,6 @@ import speedtest
 import csv
 import datetime
 
-
-for
-
 agora = datetime.datetime.now()
 data = str(agora.day) + '/' + str(agora.month) + '/' + str(agora.year)
 hora = str(agora.hour) + ':' + str(agora.minute) + ':' + str(agora.second)
